@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOYX SHOP</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+/* MESSAGE BIENVENUE */
+.welcome-msg {
+    text-align: center;
+    background: #fceae9;
+    color: #c0392b;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* TITRES */
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.6em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* PRODUITS */
+.product {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 270px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: #c0392b;
+}
+
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* INPUTS */
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* TRUST */
+.trust {
+    text-align: center;
+    padding: 25px;
+    background: white;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* WhatsApp Channel Icon */
+.whatsapp-channel-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp-channel-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-channel-btn:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Profil Icon */
+.whatsapp-profile-btn {
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.whatsapp-profile-btn a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+}
+
+.whatsapp-profile-btn img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.whatsapp-profile-btn img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>LOYX SHOP</h1>
+    <p>Comptes Free Fire & Recharge Diamants</p>
+</header>
+
+<div class="welcome-msg">
+BONJOUR CHER CLIENT, VOICI QUELQUES OPTION POUR VOTRE SATISFACTION.
+</div>
+
+<div class="section-title">🔥 Vente de Comptes Free Fire</div>
+
+<div class="container">
+    <div class="product">
+        <img src="https://via.placeholder.com/250">
+        <h3>Compte Free Fire</h3>
+
+        <select id="pay1">
+           <option>Wave</option>
+            <option>Orange Money</option>
+            <option>Moov Money</option>
+        </select>
+
+        <input type="text" id="name1" placeholder="Nom complet">
+        <input type="email" id="email1" placeholder="Gmail">
+        <input type="tel" id="phone1" placeholder="Numéro de téléphone">
+        <input type="text" id="criteria1" placeholder="Critères du compte Free Fire">
+
+        <button onclick="order(this)">Commander</button>
+    </div>
+</div>
+
+<div class="section-title">💎 Recharge Diamants Free Fire</div>
+
+<div class="container">
+    <div class="product">
+        <img src="https://via.placeholder.com/250">
+        <h3>Diamants</h3>
+        <p class="price">DM POUR LES PRIX</p>
+
+        <select id="pay2">
+            <option>Wave</option>
+            <option>Orange Money</option>
+            <option>Moov Money</option>
+        </select>
+
+        <input type="text" id="name2" placeholder="Nom complet">
+        <input type="email" id="email2" placeholder="Gmail">
+        <input type="tel" id="phone2" placeholder="Numéro de téléphone">
+        <input type="text" id="criteria2" placeholder="Message supplémentaire">
+
+        <button onclick="order(this)">Commander</button>
+    </div>
+</div>
+
+<div class="trust">
+    🔒 Paiement sécurisé via Wave, Orange Money et Moov Money.<br>
+    ⚡ Livraison rapide après confirmation.<br>
+    💬 Support disponible sur WhatsApp.<br>
+    ⭐ Boutique fiable avec clients satisfaits.
+</div>
+
+<!-- Bouton flottant WhatsApp contact -->
+<a class="whatsapp-btn" href="https://wa.me/2250171008982" target="_blank">
+📞 WhatsApp
+</a>
+
+<!-- Icône WhatsApp pour la chaîne -->
+<a class="whatsapp-channel-btn" href="https://whatsapp.com/channel/0029Vb77sykFHWq09uCVHJ0N" target="_blank" title="Rejoindre notre chaîne WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<!-- Icône WhatsApp profil -->
+<div class="whatsapp-profile-btn">
+    <a href="https://wa.me/message/R3N4VHSYTEH3C1" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Profil WhatsApp">
+        Mon profil WhatsApp
+    </a>
+</div>
+
+<script>
+function order(button) {
+    const productDiv = button.closest('.product');
+    const productName = productDiv.querySelector('h3').innerText;
+    const payment = productDiv.querySelector('select').value;
+    const name = productDiv.querySelector('input[type="text"]').value.trim();
+    const email = productDiv.querySelector('input[type="email"]').value.trim();
+    const phone = productDiv.querySelector('input[type="tel"]').value.trim();
+    const criteriaInput = productDiv.querySelector('input[placeholder*="Critères"], input[placeholder*="Message"]');
+    const criteria = criteriaInput ? criteriaInput.value.trim() : '';
+
+    if (!name || !email || !phone || (criteriaInput && !criteria)) {
+        alert("Veuillez remplir tous les champs !");
+        return;
+    }
+
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert("Veuillez entrer un email valide !");
+        return;
+    }
+
+    if (!/^\d{8,15}$/.test(phone)) {
+        alert("Veuillez entrer un numéro de téléphone valide !");
+        return;
+    }
+
+    let message = "🛒 Nouvelle commande !%0A"
+        + "---------------------------------%0A"
+        + "Produit: " + productName + "%0A"
+        + "Nom complet: " + name + "%0A"
+        + "Gmail: " + email + "%0A"
+        + "Téléphone: " + phone + "%0A"
+        + "Paiement: " + payment;
+
+    if (criteriaInput) {
+        message += "%0ACritères/Message: " + criteria;
+    }
+
+    message += "%0A---------------------------------%0A";
+
+    window.open("https://wa.me/2250171008982?text=" + message, "_blank");
+}
+</script>
+
+</body>
+</html>
